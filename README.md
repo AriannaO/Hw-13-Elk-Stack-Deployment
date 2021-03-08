@@ -1,2 +1,2 @@
-# the-great-and-powerful
-A bunch of cool stuff
+# Homework 13 ELK Stack Deployment
+Arianna Ommundsens ReadME
