@@ -26,6 +26,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 -Load balancing ensures that the application will be highly responsive, in addition to restricting traffic to the network.
+
 -The advantage of a Jump Box is that it minimises the attack surface by ensuring remote connections to the cloud network come through a single VM.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system log.
