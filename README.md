@@ -62,10 +62,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | No                  | 10.0.0.1 10.0.0.2    |
-| Web-1    | No                  |                      |
-| Web-2    | No                  |                      |
-| Web-3    | No                  |                      |
+| Jump Box | No                  | 10.0.0.1 // 10.1.0.4 // 10.0.0.7 // 10.0.0.6 // 10.0.0.8 |
+| Web-1    | No                  | 10.0.0.7 // 10.1.0.4                                     |
+| Web-2    | No                  | 10.0.0.6 // 10.1.0.4                                     |
+| Web-3    | No                  | 10.0.0.8 // 10.1.0.4                                     |
 
 ### Elk Configuration
 
@@ -93,6 +93,8 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 - Filebeat
+
+-Metricbeat
 
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects and logs data about the file system.
