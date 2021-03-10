@@ -11,6 +11,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ![file-beat playbook](https://user-images.githubusercontent.com/73668221/110511354-252b1500-80d2-11eb-9a5a-ce2813e4352b.JPG)
 
+![my playbook](https://user-images.githubusercontent.com/73668221/110560011-3b0cfa00-8113-11eb-96c2-088008fafcc4.JPG)
+
+
 
 This document contains the following details:
 - Description of the Topology
