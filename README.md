@@ -52,6 +52,7 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 - 13.92.37.104
 
 Machines within the network can only be accessed by Jump Box machine.
+
 -The ELK VM was allowed to access the Jump Box machine and Web1, Web-2 and Web-3. 13.92.37.104 , 10.0.0.7 , 10.0.0.6 , 10.0.0.8.
 
 A summary of the access policies in place can be found in the table below.
