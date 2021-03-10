@@ -13,8 +13,6 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ![my playbook](https://user-images.githubusercontent.com/73668221/110560011-3b0cfa00-8113-11eb-96c2-088008fafcc4.JPG)
 
-
-
 This document contains the following details:
 - Description of the Topology
 - Access Policies
@@ -70,17 +68,24 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+
 -The main advantage of automating configuration with Ansible is that it allows IT administrators the ability to automate your daily work tasks and give the administrator more time to focus on the needs of the business.
 
 The playbook implements the following tasks:
+
 -Configure ELK with Docker
+
 -Install docker.io
+
 -Install pip3
+
 -Download and launch docker in ELK container
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![docker ps](https://user-images.githubusercontent.com/73668221/110661075-320f3d80-8192-11eb-99ce-b5c061812ed5.JPG)
+
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -92,6 +97,7 @@ This ELK server is configured to monitor the following machines:
 - Web-3 10.0.0.8
 
 We have installed the following Beats on these machines:
+
 -Filebeat
 
 -Metricbeat
@@ -103,13 +109,8 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the YAML file to /etc/ansible.
+- Copy the ansible.cfg file to /etc/ansible/ansible.cfg file
 - Update the /etc/ansible/hosts file to include hosts group, private IP adresses and ansible_python_interpreter=usr/bin/python3
-- Run the playbook, and navigate to curl localhost/setup.php to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Run the playbook, and navigate to http://your.VM.IP:5601/app/kibana to check that the installation worked as expected.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
